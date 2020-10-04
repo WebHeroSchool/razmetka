@@ -1,3 +1,8 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
 .header__title{
     font-family: 'PT Serif', serif;
     font-size: 24px;
@@ -21,4 +26,24 @@ font-size: 22px;
 .main-first__button {
 font-family: Roboto;
 font-size: 18px;
+}
+.wrapper {
+    margin: auto;
+    width: 80%;
+}
+.logo , .menu {
+    display: inline-block;
+}
+.logo {
+    padding: 40px 0;
+}
+.menu {
+    display: flex;
+    align-items: center;
+}
+.menu__item {
+padding: 0 13px;
+}
+.menu__item:last-child {
+    padding-right: 0;
 }
