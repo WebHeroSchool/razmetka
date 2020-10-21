@@ -1,24 +1,59 @@
+.header {
+  padding: 40px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
 .header__title{
-    font-family: 'PT Serif', serif;
-    font-size: 24px;
+  font-family: 'PT Serif', serif;
+  font-size: 24px;
 }
 
 .header__list {
-    font-family: 'Roboto', sans-serif;
-    font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
 }
 
 .main-first__subtitle {
-font-family: PT Serif;
-font-size: 66px;
+  font-family: PT Serif;
+  font-size: 66px;
 }
 
 .main-first__content {
-font-family: 'Roboto', sans-serif;
-font-size: 22px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 22px;
 }
 
 .main-first__button {
-font-family: Roboto;
-font-size: 18px;
+  font-family: Roboto;
+  font-size: 18px;
+}
+
+.wrapper {
+  margin: auto;
+  width: 80%;
+}
+
+.logo,
+.menu {
+  display: inline-block;
+}
+
+.logo {
+  width: 190px;
+  height: 35px;
+  background: url(img/logo.svg);
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+.menu__item {
+  padding: 0 13px;
+}
+
+.menu__item:last-child {
+  padding-right: 0;
 }
