@@ -59,36 +59,32 @@
   transition: opacity .5s;
 }
 
-.menu__item:after {
+.menu__item::after {
   position: absolute;
   left: 0;
-  display: block;  
-  content: '';  
-  width: 0; 
+  display: block;
+  content: '';
+  width: 0;
   height: 3px;
-  background: #0056EC;
+  background: #0056ec;
   opacity: 0;
   transition: opacity .5s, width .5s;
 }
-   
+
 .menu__item:hover {
-  opacity: 0.5;
+  opacity: .5;
 }
  
- .menu__item:hover:after {
+.menu__item:hover::after {
   opacity: 1;
   width: 100%;
 }
  
- .menu__item:hover {
+.menu__item:hover {
   opacity: 0.5;
   background-color: #b8c8e6;
 }
 
- .menu__item:last-child {
+.menu__item:last-child {
   margin-right: 0;
-}
-
- .menu__item:last-child {
-  padding-right: 0;
 }
