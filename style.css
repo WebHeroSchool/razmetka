@@ -63,17 +63,17 @@
 .menu__item:after {
   position: absolute;
   left: 0;
-  display: block;  
+  display: block; 
   content: '';  
-  width: 0; 
+  width: 0;
   height: 3px;
-  background: #0056EC;
+  background: #0056ec;
   opacity: 0;
   transition: opacity .5s, width .5s;
 }
-   
+
 .menu__item:hover {
-  opacity: 0.5;
+  opacity: .5;
 }
  
 .menu__item:hover:after {
@@ -82,7 +82,7 @@
 }
  
 .menu__item:hover {
-  opacity: 0.5;
+  opacity: .5;
   background-color: #b8c8e6;
 }
 
@@ -95,9 +95,9 @@
 }
 
 .main {
-  padding: 0 63% 100px 0 ;
+  padding: 0 63% 100px 0;
   background: top right no-repeat url(img/Frame.svg);
- }
+}
 
 .main__title {
   margin: 0 0 40px 0;
@@ -105,7 +105,7 @@
 }
 
 .main__title-text_hihglight {
- background: #c8d8f3;
+  background: #c8d8f3;
 }
 
 .main__subtitle {
@@ -114,17 +114,17 @@
 }
 
 .main__button {
-padding: 14px 16px;
-background: #0056EC;
-border-radius: 4px;
-color: white;
-transition: opacity .5s;
-position: relative;
+  padding: 14px 16px;
+  background: #0056EC;
+  border-radius: 4px;
+  color: white;
+  transition: opacity .5s;
+  position: relative;
 }
 
 .main__button:hover {
-opacity: .5;
-box-shadow: 2px 2px white, 4px 4px #13118b;
-top: -4px;
-left: -4px;
+  opacity: .5;
+  box-shadow: 2px 2px white, 4px 4px #13118b;
+  top: -4px;
+  left: -4px;
 }
