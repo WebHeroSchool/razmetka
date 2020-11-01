@@ -63,8 +63,8 @@
 .menu__item:after {
   position: absolute;
   left: 0;
-  display: block; 
-  content: '';  
+  display: block;
+  content: '';
   width: 0;
   height: 3px;
   background: #0056ec;
@@ -75,12 +75,12 @@
 .menu__item:hover {
   opacity: .5;
 }
- 
+
 .menu__item:hover:after {
   opacity: 1;
   width: 100%;
 }
- 
+
 .menu__item:hover {
   opacity: .5;
   background-color: #b8c8e6;
@@ -88,10 +88,6 @@
 
 .menu__item:last-child {
   margin-right: 0;
-}
-
-.menu__item:last-child {
-  padding-right: 0;
 }
 
 .main {
@@ -115,7 +111,7 @@
 
 .main__button {
   padding: 14px 16px;
-  background: #0056EC;
+  background: #0056ec;
   border-radius: 4px;
   color: white;
   transition: opacity .5s;
