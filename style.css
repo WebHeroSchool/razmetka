@@ -124,3 +124,133 @@
   top: -4px;
   left: -4px;
 }
+
+#checkbox {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  
+.logo {
+   background: no-repeat url(img/logo2.svg);
+   top: 60px;
+  }
+.menu {
+   display: none;
+  }
+   /*Создали линию нашего меню */
+.menu-line {
+   display: flex;
+   justify-content: left;
+   align-items: flex-end;
+   position: absolute;
+   width: 25px;
+   height: 3px;
+   left: 326px;
+   top: 60px;
+   background: #0056ec;
+   }
+
+ #checkbox {
+   display: none;
+   }
+   
+ .menu-line::after{
+   position: absolute;
+   top: 10px;
+   content: '';
+   width: 25px;
+   height: 3px;
+   display: block;
+   background: #0056EC;
+   }
+ 
+ .menu-line::before{
+   position: absolute;
+   top: -10px;
+   content: '';
+   width: 25px;
+   height: 3px;
+   display: block;
+   background: #0056EC;
+   }
+  
+ #checkbox:checked ~ .logo {
+   transform: transparent;
+   }
+
+ #checkbox:checked ~ .menu-line::after {
+   transform: rotate(45deg);
+   top: 0;
+   } 
+
+ #checkbox:checked ~ .menu-line{
+  background-color: transparent;
+   }
+
+#checkbox:checked ~ .menu-line::before {
+   transform: rotate(-45deg);
+   top: 0;
+ }
+ 
+#checkbox:checked ~ .menu {
+ display: block ;
+ visibility: visible;
+ background:  #fff;
+ position: absolute;
+ width: 375px;
+ height: 700px;
+ z-index: 1000;
+ }
+ #checkbox:checked ~ .menu__item {
+  display: flex;
+  justify-content: center;
+  width: 63px;
+  height: 36px;
+  top: 186px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 35px;
+ }
+
+
+
+ .header {
+   margin-bottom: 28px;
+  }
+  
+  .main {
+    padding: 74% 0 0;
+    background-size: 74%;
+    background-position: top center;
+    flex: center;
+  }
+
+  .main__title {
+    margin-bottom: 44px;
+    font: bold 30px/39px PT Serif, arial, helvetica, sans-serif;
+  }
+
+  .main__title-text_hihglight {
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .main__title-text_first {
+    display: flex;
+    align-items: center;
+  }
+
+  .main__subtitle {
+    margin-bottom: 25px;
+    font: 500 16px/19px Roboto, arial, helvetica, sans-serif;
+    flex: center;
+  }
+
+  .main__button {
+    font: 500 14px/16px Roboto, arial, helvetica, sans-serif;
+  }
+}
