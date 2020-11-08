@@ -60,7 +60,7 @@
   transition: opacity .5s;
 }
 
-.menu__item:after {
+.menu__item::after {
   position: absolute;
   left: 0;
   display: block;
@@ -76,7 +76,7 @@
   opacity: .5;
 }
 
-.menu__item:hover:after {
+.menu__item:hover::after {
   opacity: 1;
   width: 100%;
 }
@@ -130,42 +130,43 @@
 }
 
 @media (max-width: 768px) {
-  
+
 .logo {
-   background: no-repeat url(img/logo2.svg);
-   top: 60px;
+    background: no-repeat url(img/logo2.svg);
+    top: 60px;
   }
+
 .menu {
-   display: none;
+    display: none;
   }
-   /*Создали линию нашего меню */
+
 .menu-line {
-   display: flex;
-   justify-content: left;
-   align-items: flex-end;
-   position: absolute;
-   width: 25px;
-   height: 3px;
-   left: 326px;
-   top: 60px;
-   background: #0056ec;
+    display: flex;
+    justify-content: left;
+    align-items: flex-end;
+    position: absolute;
+    width: 25px;
+    height: 3px;
+    left: 326px;
+    top: 60px;
+    background: #0056ec;
    }
 
  #checkbox {
-   display: none;
+    display: none;
    }
-   
- .menu-line::after{
-   position: absolute;
-   top: 10px;
-   content: '';
-   width: 25px;
-   height: 3px;
-   display: block;
-   background: #0056EC;
+
+ .menu-line::after {
+    position: absolute;
+    top: 10px;
+    content: '';
+    width: 25px;
+    height: 3px;
+    display: block;
+    background: #0056EC;
    }
  
- .menu-line::before{
+ .menu-line::before {
    position: absolute;
    top: -10px;
    content: '';
@@ -184,41 +185,39 @@
    top: 0;
    } 
 
- #checkbox:checked ~ .menu-line{
-  background-color: transparent;
+  #checkbox:checked ~ .menu-line {
+    background-color: transparent;
    }
 
-#checkbox:checked ~ .menu-line::before {
-   transform: rotate(-45deg);
-   top: 0;
+  #checkbox:checked ~ .menu-line::before {
+    transform: rotate(-45deg);
+    top: 0;
  }
  
-#checkbox:checked ~ .menu {
- display: block ;
- visibility: visible;
- background:  #fff;
- position: absolute;
- width: 375px;
- height: 700px;
- z-index: 1000;
+  #checkbox:checked ~ .menu {
+    display: block ;
+    visibility: visible;
+    background:  #fff;
+    position: absolute;
+    width: 375px;
+    height: 700px;
+    z-index: 1000;
  }
  #checkbox:checked ~ .menu__item {
-  display: flex;
-  justify-content: center;
-  width: 63px;
-  height: 36px;
-  top: 186px;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 30px;
-  line-height: 35px;
+    display: flex;
+   justify-content: center;
+   width: 63px;
+   height: 36px;
+   top: 186px;
+   font-family: Roboto;
+   font-style: normal;
+   font-weight: 500;
+   font-size: 30px;
+   line-height: 35px;
  }
 
-
-
- .header {
-   margin-bottom: 28px;
+  .header {
+    margin-bottom: 28px;
   }
   
   .main {
