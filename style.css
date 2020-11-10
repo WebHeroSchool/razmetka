@@ -135,13 +135,13 @@
     background: no-repeat url(img/logo2.svg);
     margin-top: -20px;
     margin-left: -20px;
-  }
+ }
 
   .menu {
-  margin-left: -44px;
-  display: none;
-  margin-top: -46px;
-  }
+    margin-left: -44px;
+    display: none;
+    margin-top: -46px;
+ }
 
   .menu-line {
     display: flex;
@@ -154,11 +154,11 @@
     top: 60px;
     background: #0056ec;
     margin-top: -20px;
-   }
+  }
 
- #checkbox {
+  #checkbox {
     display: none;
-   }
+  }
 
  .menu-line::after {
     position: absolute;
@@ -167,9 +167,9 @@
     width: 25px;
     height: 3px;
     display: block;
-    background: #0056EC;
-   }
- 
+    background: #0056ec;
+  }
+
  .menu-line::before {
    position: absolute;
    top: -10px;
@@ -178,72 +178,72 @@
    height: 3px;
    display: block;
    background: #0056EC;
-   }
-  
- #checkbox:checked ~ .logo {
-   transform: transparent;
-   }
+  }
 
- #checkbox:checked ~ .menu-line::after {
-   transform: rotate(45deg);
-   top: 0;
-   } 
+  #checkbox:checked ~ .logo {
+    transform: transparent;
+  }
+
+  #checkbox:checked ~ .menu-line::after {
+    transform: rotate(45deg);
+    top: 0;
+  }
 
   #checkbox:checked ~ .menu-line {
     background-color: transparent;
-   }
+  }
 
   #checkbox:checked ~ .menu-line::before {
     transform: rotate(-45deg);
     top: 0;
- }
+  }
  
   #checkbox:checked ~ .menu {
     display: flex;
     flex-direction: column;
     visibility: visible;
-    background:  #fff;
+    background: #fff;
     position: absolute;
     width: 375px;
     height: 700px;
     z-index: 1;
- }
+  }
 
   label {
     z-index: 2;
   }
 
- .menu__item {
-   display: flex;
-   justify-content: center;
-   width: 63px;
-   height: 36px;
-   top: 186px;
-   font-family: Roboto;
-   font-style: normal;
-   font-weight: 500;
-   font-size: 30px;
-   line-height: 35px;
- }
-
-  .menu__item-start {
-    position: absolute;
+  .menu__item {
+    display: flex;
+    justify-content: center;
     width: 63px;
     height: 36px;
-    left: calc(50% - 63px/2);
     top: 186px;
     font-family: Roboto;
     font-style: normal;
     font-weight: 500;
     font-size: 30px;
     line-height: 35px;
- }
+  }
+
+  .menu__item-start {
+    position: absolute;
+    width: 63px;
+    height: 36px;
+    left: calc(50% - 63px /2);
+    top: 186px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 35px;
+  }
 
   .menu__item-services {
     position: absolute;
     width: 113px;
     height: 36px;
-    left: calc(50% - 113px/2);
+    left: calc(50% - 113px /2);
     top: 246px;
     font-family: Roboto;
     font-style: normal;
@@ -255,8 +255,8 @@
   .menu__item-about {
     position: absolute;
     width: 77px;
-    height: 36p;
-    left: calc(50% - 77px/2 - 2px);
+    height: 36px;
+    left: calc(50% - 77px /2 - 2px);
     top: 306px;
     font-family: Roboto;
     font-style: normal;
@@ -269,7 +269,7 @@
     position: absolute;
     width: 59px;
     height: 36px;
-    left: calc(50% - 59px/2 - 2px);
+    left: calc(50% - 59px /2 - 2px);
     top: 366px;
     font-family: Roboto;
     font-style: normal;
@@ -278,11 +278,11 @@
     line-height: 35px;
   }
 
-  .menu__item-contact{
+  .menu__item-contact {
     position: absolute;
     width: 142px;
     height: 36px;
-    left: calc(50% - 142px/2 - 2.5px);
+    left: calc(50% - 142px /2 - 2.5px);
     top: 426px;
     font-family: Roboto;
     font-style: normal;
@@ -338,7 +338,6 @@
     top: 498px;
     width: 275px;
     height: 57px;
-    font-size: 16px;
     margin-bottom: 25px;
     font: 500 16px/19px Roboto, arial, helvetica, sans-serif;
   }
@@ -346,7 +345,7 @@
   .main__button {
     width: 209px;
     height: 44px;
-    left: calc(50% - 209px/2 + 1px);
+    left: calc(50% - 209px /2 + 1px);
     font: 500 14px/16px Roboto, arial, helvetica, sans-serif;
   }
 }
